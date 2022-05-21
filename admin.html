@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prodForm{
+            width: 25%;
+            margin: auto;
+            /* border: 1px solid red; */
+            padding: 5px;
+            margin-top: 100px;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            gap: 10px;
+        }
+        input, select{
+            font-size: 20px ;
+            border-radius: 5px;
+            border: 1px solid rgba(190, 190, 190, 0.481);
+            padding: 5px;
+        }
+        input[type = "submit"]{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="prodForm">
+        <form id="form">
+            <input type="text" id="name" placeholder="Enter Product Name">
+            <select name="" id="category">
+                <option value="shoes">Shoes</option>
+                <option value="mobile">Mobile</option>
+                <option value="laptop">Laptop</option>
+                <option value="glasses">Glasses</option>
+                <option value="clothes">Clothes</option>
+            </select>
+            <input type="text" id="image" placeholder="Enter image URL">
+            <input type="number" id="price" placeholder="Enter The Price of Product">
+            <select name="" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <select name="" id="sold">
+                <option value="false">False</option>
+                <option value="true">True</option>
+            </select>
+            <input type="submit" id="add">
+        </form>
+    </div>
+    <a href="test.html">test</a>
+</body>
+<script src="index.js"></script>
+</html>
